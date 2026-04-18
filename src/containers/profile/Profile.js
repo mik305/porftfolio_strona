@@ -7,8 +7,10 @@ const renderLoader = () => <Loading />;
 const GithubProfileCard = lazy(() =>
   import("../../components/githubProfileCard/GithubProfileCard")
 );
+
 export default function Profile() {
   const [prof, setrepo] = useState([]);
+  
   function setProfileFunction(array) {
     setrepo(array);
   }
@@ -36,17 +38,20 @@ export default function Profile() {
       getProfileData();
     }
   }, []);
-  if (
-    openSource.display &&
-    openSource.showGithubProfile === "true" &&
-    !(typeof prof === "string" || prof instanceof String)
-  ) {
-    return (
-      <Suspense fallback={renderLoader()}>
-        <GithubProfileCard prof={prof} key={prof.id} />
-      </Suspense>
-    );
-  } else {
-    return <Contact />;
-  }
+
+  // NOWA LOGIKA: Zawsze pokazujemy Kontakt na dole, a Githuba powyżej (jeśli jest włączony)
+  return (
+    <div className="profile-main-container">
+      {openSource.display &&
+        openSource.showGithubProfile === "true" &&
+        !(typeof prof === "string" || prof instanceof String) && (
+          <Suspense fallback={renderLoader()}>
+            <GithubProfileCard prof={prof} key={prof.id} />
+          </Suspense>
+        )}
+      
+      {/* Sekcja kontaktowa wyświetli się zawsze, niezależnie od GitHuba */}
+      <Contact />
+    </div>
+  );
 }

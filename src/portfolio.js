@@ -20,26 +20,25 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Mikołaj Turek",
+  title: "Hi, I'm Mikołaj",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate Robotics & Embedded Systems Engineer 🚀 specializing in ESP32/STM32 microcontrollers, electronic circuit design."
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+  resumeLink: "./assets/CV.pdf", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/mik305",
+  linkedin: "https://www.linkedin.com/in/miko%C5%82aj-turek/",
+  gmail: "mikolaj.turek.gd@gmail.com",
+  //gitlab: "https://gitlab.com/saadpasta",
+  //facebook: "https://www.facebook.com/saad.pasta7",
+  //medium: "https://medium.com/@saadpasta",
+  //stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -49,15 +48,12 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "ROBOTICS, ELECTRONICS & EMBEDDED SYSTEMS ENGINEER",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    emoji("⚡ Programming of ESP32 and STM32 microcontrollers in C/C++ using FreeRTOS"),
+    emoji("⚡ Electronic circuit design using Altium Designer and LTSpice simulations"),
+    emoji("⚡ Building and soldering custom PCBs and operating laboratory equipment (multimeter, oscilloscope)"),
+    emoji("⚡ 3D design (Autodesk Inventor, AutoCAD) and 3D printing for robotics applications")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -65,56 +61,32 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "C/C++",
+      fontAwesomeClassname: "fas fa-code"
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
+      skillName: "Python",
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "Microcontrollers",
+      fontAwesomeClassname: "fas fa-microchip"
+    },
+    {
+      skillName: "Circuit Design",
+      fontAwesomeClassname: "fas fa-bolt"
+    },
+    {
+      skillName: "3D Design",
+      fontAwesomeClassname: "fas fa-cube"
+    },
+    {
+      skillName: "IoT Protocols",
+      fontAwesomeClassname: "fas fa-network-wired"
+    },
+    {
+      skillName: "Industry protocols",
+      fontAwesomeClassname: "fa-regular fa-industry"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -126,31 +98,28 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      schoolName: "Gdańsk University of Technology",
+      logo: require("./assets/images/pg.jpg"), // Zmień na logo PG
+      subHeader: "Science in Automation, Cybernetics, and Robotics (Bachelor)",
+      duration: "October 2022 - January 2026",
+      desc: "Engineering Thesis: Audio recorder interference device.",
+      descBullets: []
     },
-    {
+    /*{
       schoolName: "Stanford University",
       logo: require("./assets/images/stanfordLogo.png"),
       subHeader: "Bachelor of Science in Computer Science",
       duration: "September 2013 - April 2017",
       desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
       descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
-    }
+    }*/
   ]
 };
 
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
@@ -171,32 +140,64 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true,
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Design Engineer",
+      company: "OBR Centrum Techniki Morskiej S.A.",
+      companylogo: require("./assets/images/ctm.jpg"), // Zmień logo
+      date: "January 2026 – Present",
+      desc: "Working full-time in the underwater weapons design department. Modernization of the ECA project, implementing solutions for existing and future units.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Electronic circuit design in Altium Designer and LTSpice circuit simulations.",
+        "Test support software development in LabView and STM32 programming based on FreeRTOS.",
+        "Assembly and testing of developed solutions."
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Product Consulting & R&D",
+      company: "VTS Sp. z.o.o.",
+      companylogo: require("./assets/images/vts.png"), // Zmień logo
+      date: "August 2024 – Present",
+      desc: "Working on the 'Wing' and Recuperator 'Homer' projects. Developing ESP32-based software enabling communication between a smartphone and an STM32 microcontroller.",
+      descBullets: [
+        "Developing software for ESP32 and PC (Python) for automated product testing.",
+        "Programming in C using FreeRTOS and implementing IoT protocols (SPI, Ethernet, WiFi, BLE, I2C, Modbus).",
+        "Independent development of ESP32-side solutions and testing with mobile applications."
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Participant and Mentor",
+      company: "Roboilo",
+      companylogo: require("./assets/images/roboilo_white.png"), // Zmień logo
+      date: "october 2018 – Present",
+      desc: "Active participant and mentor in the Robotics Scientific Club at the 1st High School in Gdańsk, gaining extensive experience in robotics, electronics, 3D design, 3D printing, circuit design, and microcontroller programming.",
+      descBullets: [
+        "PCB design projects based on STM32 and ESP32",
+        "Soldering and building robots using both custom PCBs and ready-made solutions"
+      ]
+    },
+    {
+      role: "Freelance Programmer",
+      company: "Suprima Electronics Brokering Sp. z.o.o.",
+      companylogo: require("./assets/images/solidity.jpg"), // Zmień logo
+      date: "January 2022 – January 2024",
+      desc: "Freelance collaboration on various projects involving blockchain-based solutions.",
+      descBullets: [
+        "Creation of a DAO for residents.",
+        "Developed a Supabase database as a backup layer for blockchain data.",
+        "User frontend and administrative panel development for blockchain management."
+      ]
+    },
+    {
+      role: "Internship – Helpdesk/IT Support",
+      company: "Międzynarodowe Targi Gdańskie S.A.",
+      companylogo: require("./assets/images/mtgsa.jpg"), // Zmień logo
+      date: "June 2021 – August 2021",
+      desc: "Internship in the IT department at MTG S.A., where I was responsible for resolving technical issues in the office, receiving and setting up new equipment, as well as administering and maintaining the company’s computer resources.",
+      descBullets: [
+
+      ]
     }
   ]
 };
@@ -213,30 +214,42 @@ const openSource = {
 
 const bigProjects = {
   title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  subtitle: "PROJECT MADE FOR COMPANIES AND BIG PERSONAL PROJECTS",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
-        }
-        //  you can add extra buttons here.
-      ]
+      image: require("./assets/images/tral.jpg"),
+      projectName: "Modernizacja MLM",
+      projectDesc: "projekt modernizacji MLM realizowany dla CTM"
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
-      ]
+      image: require("./assets/images/jammer.jpg"),
+      projectName: "Audio Jammer",
+      projectDesc: "praca inżynierska - audio jammer"
+    },
+    {
+      image: require("./assets/images/rekuperator.jpg"),
+      projectName: "Recuperator",
+      projectDesc: "rekuperator tworzony wraz z vts"
+    },
+    {
+      image: require("./assets/images/caravan.png"),
+      projectName: "Self leveling system",
+      projectDesc: "projekt grupowy realizowany na studiach, sampoziomująca się platforma"
+    },
+    {
+      image: require("./assets/images/sumo.jpg"),
+      projectName: "Sumo robot",
+      projectDesc: "jeden ze zbudowanych robotów - sumo"
+    },
+    {
+      image: require("./assets/images/minisumo.jpg"),
+      projectName: "MiniSumo robot",
+      projectDesc: "jeden ze zbudowanych robotów - minisumo"
+    },
+    {
+      image: require("./assets/images/followLiner.jpg"),
+      projectName: "LinieFollower robot",
+      projectDesc: "jeden ze zbudowanych robotów - linefollower"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -246,61 +259,32 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
-
+  title: emoji("Achievements And Certifications 🏆"),
+  subtitle: "Awards and successes from national and international robotics competitions.",
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
+      title: "1st Place - RoboRAVE World Championship 2025",
+      subtitle: "Achieved 1st place in the World Championships in China (2025).",
+      image: require("./assets/images/roboraveChin.png"), // Dodaj grafikę/logo zawodów
+      imageAlt: "RoboRAVE Logo",
+      footerLink: []
     },
     {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
+      title: "1st Place - RoboRAVE World Championship 2024",
+      subtitle: "Achieved 1st place in the World Championships Australia (2024).",
+      image: require("./assets/images/roboraveAust.png"), // Dodaj logo zawodów
+      imageAlt: "RoboRAVE Logo",
+      footerLink: []
     },
-
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
+      title: "Multiple Podiums in National Competitions as a Part of Roboilo",
+      subtitle: "More details on our website:",
+      image: require("./assets/images/roboilo_white.png"), // Dodaj grafikę
+      imageAlt: "Robotics Competitions",
+      footerLink: []
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Blogs Section
@@ -309,7 +293,7 @@ const blogSection = {
   title: "Blogs",
   subtitle:
     "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
+  displayMediumBlogs: "false", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
       url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
@@ -324,7 +308,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -343,7 +327,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -356,7 +340,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -365,25 +349,22 @@ const resumeSection = {
   subtitle: "Feel free to download my resume",
 
   // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "+48 600 231 550",
+  email_address: "mikolaj.turek.gd@gmail.com" 
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,

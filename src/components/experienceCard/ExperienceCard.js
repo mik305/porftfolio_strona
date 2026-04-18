@@ -6,9 +6,18 @@ export default function ExperienceCard({cardInfo, isDark}) {
   const [colorArrays, setColorArrays] = useState([]);
   const imgRef = createRef();
 
-  function getColorArrays() {
+function getColorArrays() {
     const colorThief = new ColorThief();
-    setColorArrays(colorThief.getColor(imgRef.current));
+    if (imgRef.current) {
+      try {
+        const colors = colorThief.getColor(imgRef.current);
+        setColorArrays(colors);
+      } catch (err) {
+        console.warn("ColorThief nie mógł pobrać koloru z logo. Ustawiam domyślny kolor.");
+        // Domyślny kolor tła (np. ciemnoszary: [80, 80, 80] lub inny z palety RGB)
+        setColorArrays([80, 80, 80]); 
+      }
+    }
   }
 
   function rgb(values) {
