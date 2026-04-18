@@ -36,10 +36,17 @@
 
 .button-greeting-div {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 40px;
 }
 .download-link-button {
   text-decoration: none;
+}
+@media (max-width: 768px) {
+  .button-greeting-div {
+    flex-direction: column; /* Układa przyciski w pionie */
+    align-items: center;    /* Środkuje je */
+  }
 }
 
 .greeting-text {
