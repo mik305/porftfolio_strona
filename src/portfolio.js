@@ -214,45 +214,45 @@ const openSource = {
 
 const bigProjects = {
   title: "Big Projects",
-  subtitle: "PROJECT MADE FOR COMPANIES AND BIG PERSONAL PROJECTS",
+  subtitle: "COMMERCIAL PROJECTS & ADVANCED ENGINEERING PROTOTYPES",
   projects: [
     {
       image: require("./assets/images/tral.jpg"),
-      projectName: "Modernizacja MLM",
-      projectDesc: "projekt modernizacji MLM realizowany dla CTM"
+      projectName: "MLM System Modernization",
+      projectDesc: "A comprehensive modernization project of the MLM system developed for the OBR CTM S.A. research and development center."
     },
     {
       image: require("./assets/images/jammer.jpg"),
-      projectName: "Audio Jammer",
-      projectDesc: "praca inżynierska - audio jammer"
+      projectName: "Audio Recorder Interference Device",
+      projectDesc: "Engineering thesis project focused on designing and building an advanced electronic device capable of jamming recording equipment."
     },
     {
       image: require("./assets/images/rekuperator.jpg"),
-      projectName: "Recuperator",
-      projectDesc: "rekuperator tworzony wraz z vts"
+      projectName: "'Homer' Recuperator Control System",
+      projectDesc: "Developed an ESP32-based communication and control software for a modern heat recovery unit in collaboration with VTS Sp. z o.o."
     },
     {
       image: require("./assets/images/caravan.png"),
-      projectName: "Self leveling system",
-      projectDesc: "projekt grupowy realizowany na studiach, sampoziomująca się platforma"
+      projectName: "Autonomous Self-Leveling Platform",
+      projectDesc: "A university engineering project involving the design, sensor integration, and programming of an automated self-leveling system."
     },
     {
       image: require("./assets/images/sumo.jpg"),
-      projectName: "Sumo robot",
-      projectDesc: "jeden ze zbudowanych robotów - sumo"
+      projectName: "Autonomous Sumo Robot",
+      projectDesc: "Designed and built a competitive heavy-weight autonomous sumo robot featuring custom electronics, precise sensors, and optimized mechanics."
     },
     {
       image: require("./assets/images/minisumo.jpg"),
-      projectName: "MiniSumo robot",
-      projectDesc: "jeden ze zbudowanych robotów - minisumo"
+      projectName: "MiniSumo Combat Robot",
+      projectDesc: "A compact, highly agile autonomous robot engineered for international robotics competitions, utilizing a custom-designed PCB."
     },
     {
       image: require("./assets/images/followLiner.jpg"),
-      projectName: "LinieFollower robot",
-      projectDesc: "jeden ze zbudowanych robotów - linefollower"
+      projectName: "High-Speed Line Follower",
+      projectDesc: "A fast and precise line-following robot utilizing advanced PID control algorithms for optimal and dynamic track navigation."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true 
 };
 
 // Achievement Section
