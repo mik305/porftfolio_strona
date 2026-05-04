@@ -217,37 +217,37 @@ const bigProjects = {
   subtitle: "COMMERCIAL PROJECTS & ADVANCED ENGINEERING PROTOTYPES",
   projects: [
     {
-      image: require("./assets/images/tral.jpg"),
+      image: "./images/tral.jpg", 
       projectName: "MLM System Modernization",
       projectDesc: "A comprehensive modernization project of the MLM system developed for the OBR CTM S.A. research and development center."
     },
     {
-      image: require("./assets/images/jammer.jpg"),
+      image: "./images/jammer.jpg",
       projectName: "Audio Recorder Interference Device",
       projectDesc: "Engineering thesis project focused on designing and building an advanced electronic device capable of jamming recording equipment."
     },
     {
-      image: require("./assets/images/rekuperator.jpg"),
+      image: "./images/rekuperator.jpg",
       projectName: "'Homer' Recuperator Control System",
       projectDesc: "Developed an ESP32-based communication and control software for a modern heat recovery unit in collaboration with VTS Sp. z o.o."
     },
     {
-      image: require("./assets/images/caravan.png"),
+      image: "./images/caravan.png",
       projectName: "Autonomous Self-Leveling Platform",
       projectDesc: "A university engineering project involving the design, sensor integration, and programming of an automated self-leveling system."
     },
     {
-      image: require("./assets/images/sumo.jpg"),
+      image: "./images/sumo.jpg",
       projectName: "Autonomous Sumo Robot",
       projectDesc: "Designed and built a competitive heavy-weight autonomous sumo robot featuring custom electronics, precise sensors, and optimized mechanics."
     },
     {
-      image: require("./assets/images/minisumo.jpg"),
+      image: "./images/minisumo.jpg",
       projectName: "MiniSumo Combat Robot",
       projectDesc: "A compact, highly agile autonomous robot engineered for international robotics competitions, utilizing a custom-designed PCB."
     },
     {
-      image: require("./assets/images/followLiner.jpg"),
+      image: "./images/followLiner.jpg",
       projectName: "High-Speed Line Follower",
       projectDesc: "A fast and precise line-following robot utilizing advanced PID control algorithms for optimal and dynamic track navigation."
     }
